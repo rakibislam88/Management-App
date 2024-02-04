@@ -378,7 +378,7 @@ public class HomeActivity extends AppCompatActivity {
                                             String id = jsonObject.getString("userid");
                                             String name = jsonObject.getString("username");
                                             if (!admingroupid.equals(id)){
-                                                accountNameArr.add(new AccountModel(id, name, admingroupid));
+                                                accountNameArr.add(new AccountModel(id, name, admingroupid, groupnm));
                                             }
                                         } catch (JSONException e) {
                                             throw new RuntimeException(e);

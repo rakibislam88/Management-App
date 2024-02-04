@@ -48,6 +48,7 @@ public class GroupInfoActivity extends AppCompatActivity {
         memberBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                MemberFragment.groupname = group_name_get;
                 getSupportFragmentManager().beginTransaction().replace(R.id.framLayout, new MemberFragment()).commit();
             }
         });

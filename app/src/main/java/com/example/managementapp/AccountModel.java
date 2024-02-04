@@ -6,11 +6,13 @@ public class AccountModel {
 
     private String userName;
     private String adminid;
+    private String groupname;
 
-    public AccountModel(String userId, String userName, String adminid) {
+    public AccountModel(String userId, String userName, String adminid, String groupname) {
         this.userId = userId;
         this.userName = userName;
         this.adminid  = adminid;
+        this.groupname = groupname;
     }
 
     public String getUserId() {
@@ -35,5 +37,13 @@ public class AccountModel {
 
     public void setAdminid(String adminid) {
         this.adminid = adminid;
+    }
+
+    public String getGroupname() {
+        return groupname;
+    }
+
+    public void setGroupname(String groupname) {
+        this.groupname = groupname;
     }
 }

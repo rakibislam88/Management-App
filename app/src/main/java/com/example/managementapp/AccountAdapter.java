@@ -59,7 +59,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.accountV
 
         fun();
 
-        String url = "https://raquib.000webhostapp.com/apps/friend_of_admin_data.php?adminid="+ arrayList.get(position).getAdminid() +"&friendid="+ arrayList.get(position).getUserId() +"&friendname="+ arrayList.get(position).getUserName();
+        String url = "https://raquib.000webhostapp.com/apps/friend_of_admin_data.php?adminid="+ arrayList.get(position).getAdminid() +"&friendid="+ arrayList.get(position).getUserId() +"&friendname="+ arrayList.get(position).getUserName()+"&groupname="+arrayList.get(position).getGroupname();
         holder.addPeopleLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
